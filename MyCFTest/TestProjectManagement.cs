@@ -29,12 +29,12 @@ namespace MyCFTest
             //Project project = projMng.CreateProject(projOption);
 
             //////////////////////////////////////////
-            //Console.WriteLine(projMng.TrackProgressByProjectId(1));
+            Console.WriteLine(projMng.TrackProgressByProjectId(1));
             //////////////////////////////////////////
 
             //var proj = projMng.FindProjectsByProjectCreator(1);
 
-            var trediProjects = projMng.SortProjectsByTrends();
+            //var trediProjects = projMng.SortProjectsByTrends();
 
 
         }

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyCFTest.Models.Backer">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="PackageFunds" Type="MyCFTest.Models.PackageFund">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.123" Y="-0.316" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Backer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PackageFunds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.Media">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Project" Type="MyCFTest.Models.Project">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.128" Y="-0.284" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAACAAAACAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Media.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.User">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAAAEQAAAAAACAAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyCFTest.Models.ProjectStatus">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Project" Type="MyCFTest.Models.Project">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.201" Y="-0.311" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAACAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProjectStatus.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.ProjectCreator">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Projects" Type="MyCFTest.Models.Project">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.567" Y="-0.27" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\ProjectCreator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Projects" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.Project">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Packages" Type="MyCFTest.Models.Package">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.891" Y="1.473" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PackageFunds" Type="MyCFTest.Models.PackageFund">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.122" Y="0.431" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQCiAAEAAAAgAMAAAAEAAAAgAAAAAAAAAAAQBECACAQ=</HashCode>
+      <FileName>Models\Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProjectCreator" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Medias" />
+      <Property Name="ProjectStatuses" />
+      <Property Name="Packages" />
+      <Property Name="PackageFunds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.Package">
+    <Position X="11.25" Y="4" Width="1.5" />
+    <AssociationLine Name="Project" Type="MyCFTest.Models.Project">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.219" Y="-0.266" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAEACACAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Package.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PackageFunds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyCFTest.Models.PackageFund">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <AssociationLine Name="Package" Type="MyCFTest.Models.Package">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.123" Y="-0.316" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAQCQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PackageFund.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Package" />
+      <Property Name="Backer" />
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
